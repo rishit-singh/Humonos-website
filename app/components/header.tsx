@@ -23,9 +23,9 @@ export function Header({ onProductClick, onServicesClick, onAboutClick, onResour
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
   return (
-    <header className="absolute top-6 left-0 right-0 z-50 px-4 py-2 md:px-8 md:py-4">
+    <header className="absolute top-4 left-0 right-0 z-50 px-4 py-2 md:px-8 md:py-4">
       <div className="flex items-center justify-between">
-        <Link href="/" className={`text-3xl md:text-4xl font-semibold text-black drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)] ${poppins.className}`}>
+        <Link href="/" className={`text-2xl md:text-3xl font-semibold text-black drop-shadow-[0_1px_2px_rgba(255,255,255,0.6)] ${poppins.className}`}>
           Humonos
         </Link>
         <nav className="hidden md:block">

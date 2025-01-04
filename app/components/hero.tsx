@@ -5,6 +5,11 @@ import { forwardRef } from 'react'
 import { motion } from 'framer-motion'
 
 export const Hero = forwardRef<HTMLElement>((props, ref) => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact')
+    contactSection?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <motion.section 
       ref={ref} 
@@ -47,13 +52,13 @@ export const Hero = forwardRef<HTMLElement>((props, ref) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
-            <Link
-              href="#contact"
+            <button
+              onClick={scrollToContact}
               className="inline-flex items-center gap-2 rounded-full bg-black text-white px-4 py-2 md:px-6 md:py-3 text-sm md:text-base font-medium hover:bg-opacity-90 transition-colors"
             >
               GET A DEMO
               <ArrowRight className="h-4 w-4" />
-            </Link>
+            </button>
           </motion.div>
         </motion.div>
         <motion.div 

@@ -16,7 +16,7 @@ export const ProductInfo = forwardRef<HTMLElement>(function ProductInfo(props, r
               </p>
             </div>
           </div>
-          <div className="relative aspect-square w-full md:w-[120%] md:-right-[10%] mt-8 md:mt-0">
+          <div className="relative aspect-square w-full md:w-[110%] md:-right-[5%] mt-8 md:mt-0">
             <Image
               src="https://images.unsplash.com/photo-1717501219604-cc1902b5d845?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Neural network visualization representing decentralized intelligence"

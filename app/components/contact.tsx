@@ -4,7 +4,11 @@ import Link from 'next/link'
 
 export const Contact = forwardRef<HTMLElement>(function Contact(props, ref) {
   return (
-    <section ref={ref} className="min-h-screen flex items-center py-24 px-4 md:px-8 bg-white">
+    <section 
+      ref={ref} 
+      id="contact"
+      className="min-h-screen flex items-center py-24 px-4 md:px-8 bg-white"
+    >
       <div className="max-w-3xl mx-auto w-full text-center">
         <h2 className="text-4xl font-light mb-6 md:mb-8">Get in Touch</h2>
         <p className="text-lg md:text-xl mb-8 md:mb-6 mx-auto max-w-2xl leading-relaxed">
